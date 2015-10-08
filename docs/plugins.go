@@ -1,4 +1,4 @@
-Plugins are shared object files (.so on *nix and .dll on win) that can be loaded by LibSass on runtime. Currently we only provide a way to load internal/custom functions from plugins. In the future we probably will also add a way to provide custom importers via plugins (needs more refactoring to [support multiple importers with some kind of priority system](https://github.com/sass/LibSass/issues/962)).
+Plugins are shared object files (.so on *nix and .dll on win) that can be loaded by LibSass on runtime. Currently we only provide a way to load internal/custom functions from plugins. In the future we probably will also add a way to provide custom importers via plugins (needs more refactoring to [support multiple importers with some kind of priority system](https://github.com/sass/libsass/issues/962)).
 
 ## plugin.cpp
 

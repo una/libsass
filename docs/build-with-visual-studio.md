@@ -12,7 +12,7 @@ Additionally, it is recommended to have `git` installed and available in `PATH`,
 
 On opening the `win\libsass.sln` solution and build (Ctrl+Shift+B) to build `libsass.dll`.
 
-To Build LibSass as a static Library, it is recommended to set an environment variable `libsass_STATIC_LIB` before launching the project:
+To Build LibSass as a static Library, it is recommended to set an environment variable `LIBSASS_STATIC_LIB` before launching the project:
 
 ```cmd
 cd path\to\libsass

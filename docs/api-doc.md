@@ -33,7 +33,7 @@ It's deprecated and incompatible with this documentation, use `sass/context.h`!
 #include "sass/context.h"
 
 int main() {
-  puts(libsass_version());
+  puts(libsass_VERSION());
   return 0;
 }
 ```

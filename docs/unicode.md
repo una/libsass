@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 LibSass currently expects all input to be utf8 encoded (and outputs only utf8), if you actually have any unicode characters at all. We do not support conversion between encodings, even if you declare it with a `@charset` rule. The text below was originally posted as an [issue](https://github.com/sass/LibSass/issues/381) on the LibSass tracker.
+=======
+LibSass currently expects all input to be utf8 encoded (and outputs only utf8), if you actually have any unicode characters at all. We do not support conversion between encodings, even if you declare it with a `@charset` rule. The text below was originally posted as an [issue](https://github.com/sass/libsass/issues/381) on the LibSass tracker.
+>>>>>>> be25ef9a84badd28ba16f11571d7b73f9b57b3f5
 
 ### [Declaring character encodings in CSS](http://www.w3.org/International/questions/qa-css-charset.en)
 
@@ -8,7 +12,11 @@ Since my tool is written in perl, I have a lot of utilities at hand to deal with
 
 ### Current status on LibSass unicode support
 
+<<<<<<< HEAD
 Currently LibSass seems to handle the common UTF-8 case pretty well. I believe it should correctly support all ASCII compatible encodings (like UTF-8 or Latin-1). If all includes use the same encoding, the output should be correct (in the same encoding). It should also handle unicode chars in [selectors, variable names and other identifiers](https://github.com/hcatlin/LibSass/issues/244#issuecomment-34681227). This is true for all ASCII compatible encodings. So the main incompatible encodings (I'm aware of) are UTF-16/UTF-32 (which could be converted to UTF-8 with libiconv).
+=======
+Currently LibSass seems to handle the common UTF-8 case pretty well. I believe it should correctly support all ASCII compatible encodings (like UTF-8 or Latin-1). If all includes use the same encoding, the output should be correct (in the same encoding). It should also handle unicode chars in [selectors, variable names and other identifiers](https://github.com/hcatlin/libsass/issues/244#issuecomment-34681227). This is true for all ASCII compatible encodings. So the main incompatible encodings (I'm aware of) are UTF-16/UTF-32 (which could be converted to UTF-8 with libiconv).
+>>>>>>> be25ef9a84badd28ba16f11571d7b73f9b57b3f5
 
 ### Current encoding auto detection
 
