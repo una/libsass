@@ -36,7 +36,7 @@ libsass.a libsass.so
 
 ```bash
 # Let build know library location
-export SASS_LIBSASS_PATH="`pwd`/libsass"
+export SASS_libsass_PATH="`pwd`/libsass"
 # Invokes the sassc makefile
 make -C libsass -j5 sassc
 ```

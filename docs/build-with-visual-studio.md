@@ -12,14 +12,14 @@ Additionally, it is recommended to have `git` installed and available in `PATH`,
 
 On opening the `win\libsass.sln` solution and build (Ctrl+Shift+B) to build `libsass.dll`.
 
-To Build libsass as a static Library, it is recommended to set an environment variable `LIBSASS_STATIC_LIB` before launching the project:
+To Build LibSass as a static Library, it is recommended to set an environment variable `libsass_STATIC_LIB` before launching the project:
 
 ```cmd
 cd path\to\libsass
-SET LIBSASS_STATIC_LIB=1
+SET libsass_STATIC_LIB=1
 ::
 :: or in PowerShell:
-:: $env:LIBSASS_STATIC_LIB=1
+:: $env:libsass_STATIC_LIB=1
 ::
 win\libsass.sln
 ```
@@ -30,7 +30,7 @@ Visual Studio will form the filtered source tree as shown below:
 
 `Header Files` contains the .h and .hpp files, while `Source Files` covers `.c` and `.cpp`. The other used headers/sources will appear under `External Dependencies`.
 
-If there is a libsass code file appearing under External Dependencies, it can be changed by altering the `win\libsass.vcxproj.filters` file or dragging in Solution Explorer.
+If there is a LibSass code file appearing under External Dependencies, it can be changed by altering the `win\libsass.vcxproj.filters` file or dragging in Solution Explorer.
 
 #### From Command Prompt:
 
@@ -57,11 +57,11 @@ To build static library (`libsass.lib`):
 ```cmd
 :: debug build:
 "%ProgramFiles(x86)%\MSBuild\12.0\Bin\MSBuild" win\libsass.sln ^
-/p:LIBSASS_STATIC_LIB=1
+/p:libsass_STATIC_LIB=1
 
 :: release build:
 "%ProgramFiles(x86)%\MSBuild\12.0\Bin\MSBuild" win\libsass.sln ^
-/p:LIBSASS_STATIC_LIB=1 /p:Configuration=Release
+/p:libsass_STATIC_LIB=1 /p:Configuration=Release
 ```
 
 #### From PowerShell:
@@ -82,9 +82,9 @@ To build static library (`libsass.lib`):
 ```powershell
 # build:
 &"${env:ProgramFiles(x86)}\MSBuild\12.0\Bin\MSBuild" win\libsass.sln `
-/p:LIBSASS_STATIC_LIB=1
+/p:libsass_STATIC_LIB=1
 
 # release build:
 &"${env:ProgramFiles(x86)}\MSBuild\12.0\Bin\MSBuild" win\libsass.sln `
-/p:LIBSASS_STATIC_LIB=1 /p:Configuration=Release
+/p:libsass_STATIC_LIB=1 /p:Configuration=Release
 ```
